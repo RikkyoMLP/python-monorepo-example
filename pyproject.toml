@@ -1,0 +1,19 @@
+[project]
+name = "python-monorepo-example"
+version = "0.1.0"
+description = "Python monorepo example"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0.0",
+    "hsi-utils",
+]
+
+[tool.uv.workspace]
+members = ["hsi-utils"]
+
+[tool.uv.sources]
+hsi-utils = { workspace = true }
+
+[tool.uv]
+config-settings-package = {"hsi-utils" = { editable_mode = "compat" }}
