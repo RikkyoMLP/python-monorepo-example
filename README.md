@@ -16,9 +16,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Clone the repository
 
 ```bash
-git clone https://github.com/RikkyoMLP/python-monorepo-example.git
+git clone --recursive https://github.com/RikkyoMLP/python-monorepo-example.git
 cd python-monorepo-example
-git submodule update --init --recursive
 ```
 
 ### Install dependencies
